@@ -48,7 +48,9 @@ Knowledge + Distillation -> 지식 증류
 
 Teacher Network 학습 -> Student Network 학습
 Student Network soft prediction + Teacher Network soft label -> distillation loss 구성
-Student Network (haer) prediction + Original (hard) label -> classification loss 구성
+Student Network (hard) prediction + Original (hard) label -> classification loss 구성
+
+Teacher 모델의 손실값과 Student 모델의 cross entropy 값을 더해 갱신해나감. 
 
 ## Experiment
 
